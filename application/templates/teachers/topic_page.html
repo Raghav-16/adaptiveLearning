@@ -1,0 +1,28 @@
+{% extends "/teachers/base_template.html" %}
+	{% block title %}Topic: {{topic_name}}{% endblock %}
+	{% block body %}
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+			}
+		</style>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h1>Topic: {{topic_name}}</h1>
+				</div>
+			</div>
+			<div class="row">
+				</div>
+				<div class="span6">
+					<h2>Quizzes</h2>
+					<ul>
+						{% for quiz in quizzes %}
+							<li><a href="/teachers/quizzes/{{quiz.id}}/">{{quiz.name}}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

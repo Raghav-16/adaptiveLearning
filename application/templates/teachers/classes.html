@@ -1,0 +1,43 @@
+{% extends "/teachers/base_template.html" %}
+	{% block title %}Classes You Teach{% endblock %}
+	{% block body %}
+		<style>
+			ul {
+				list-style-type: none;
+				margin: 0;
+			}
+		</style>
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h1>Classes Home</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span6">
+					<h2>Classes You Teach</h2>
+					<table class="table table-striped table-hover table-bordered">
+							<thead>
+								<tr>
+									<th>Class ID</th>
+									<th>Class Name</th>
+								</tr>
+							</thead>
+							<tbody>
+						
+						{% for class in classes %}
+							<tr>
+							<td>{{class.id}}</td><td><a href="/teachers/class/{{class.id}}/">{{class.name}}</a></td>
+							</tr>
+						{% endfor %}
+							</tbody>
+					</table>
+					
+				</div>
+				<div class="span6">
+					<h2>Create a Class</h2>
+					<a href="/teachers/classes/create">Create a Class</a>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
