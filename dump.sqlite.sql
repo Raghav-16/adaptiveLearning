@@ -55,9 +55,5 @@ name TEXT,
 FOREIGN KEY(class_id) REFERENCES classes(id)
 );
  
--- INDEX
- 
--- TRIGGER
- 
--- VIEW
+
  
