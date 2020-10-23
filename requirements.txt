@@ -1,0 +1,17 @@
+Click==7.0
+Flask==1.1.1
+Flask-MySQLdb==0.2.0
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.1
+json5==0.9.1
+MarkupSafe==1.1.1
+mysqlclient==1.4.6
+python-dateutil==2.8.1
+python-docx==0.8.10
+python-jsonrpc-server==0.3.4
+python-language-server==0.31.7
+python-pptx==0.6.18
+python-slugify==3.0.4
+Werkzeug==1.0.0
+
